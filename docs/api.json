@@ -1,0 +1,174 @@
+{
+  "parameters": {
+    "key": {
+      "required": true,
+      "type": "string",
+      "description": "Your API key: 49441477-341b75558156795e6f3713ba3"
+    },
+    "q": {
+      "required": false,
+      "type": "string",
+      "description": "A URL encoded search term. If omitted, all images are returned. This value may not exceed 100 characters.",
+      "example": "yellow+flower"
+    },
+    "lang": {
+      "required": false,
+      "type": "string",
+      "description": "Language code of the language to be searched in.",
+      "accepted_values": [
+        "cs",
+        "da",
+        "de",
+        "en",
+        "es",
+        "fr",
+        "id",
+        "it",
+        "hu",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "sk",
+        "fi",
+        "sv",
+        "tr",
+        "vi",
+        "th",
+        "bg",
+        "ru",
+        "el",
+        "ja",
+        "ko",
+        "zh"
+      ],
+      "default": "en"
+    },
+    "id": {
+      "required": false,
+      "type": "string",
+      "description": "Retrieve individual images by ID."
+    },
+    "image_type": {
+      "required": false,
+      "type": "string",
+      "description": "Filter results by image type.",
+      "accepted_values": ["all", "photo", "illustration", "vector"],
+      "default": "all"
+    },
+    "orientation": {
+      "required": false,
+      "type": "string",
+      "description": "Whether an image is wider than it is tall, or taller than it is wide.",
+      "accepted_values": ["all", "horizontal", "vertical"],
+      "default": "all"
+    },
+    "category": {
+      "required": false,
+      "type": "string",
+      "description": "Filter results by category.",
+      "accepted_values": [
+        "backgrounds",
+        "fashion",
+        "nature",
+        "science",
+        "education",
+        "feelings",
+        "health",
+        "people",
+        "religion",
+        "places",
+        "animals",
+        "industry",
+        "computer",
+        "food",
+        "sports",
+        "transportation",
+        "travel",
+        "buildings",
+        "business",
+        "music"
+      ]
+    },
+    "min_width": {
+      "required": false,
+      "type": "integer",
+      "description": "Minimum image width.",
+      "default": 0
+    },
+    "min_height": {
+      "required": false,
+      "type": "integer",
+      "description": "Minimum image height.",
+      "default": 0
+    },
+    "colors": {
+      "required": false,
+      "type": "string",
+      "description": "Filter images by color properties.",
+      "accepted_values": [
+        "grayscale",
+        "transparent",
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "turquoise",
+        "blue",
+        "lilac",
+        "pink",
+        "white",
+        "gray",
+        "black",
+        "brown"
+      ]
+    },
+    "editors_choice": {
+      "required": false,
+      "type": "boolean",
+      "description": "Select images that have received an Editor's Choice award.",
+      "accepted_values": ["true", "false"],
+      "default": "false"
+    },
+    "safesearch": {
+      "required": false,
+      "type": "boolean",
+      "description": "A flag indicating that only images suitable for all ages should be returned.",
+      "accepted_values": ["true", "false"],
+      "default": "false"
+    },
+    "order": {
+      "required": false,
+      "type": "string",
+      "description": "How the results should be ordered.",
+      "accepted_values": ["popular", "latest"],
+      "default": "popular"
+    },
+    "page": {
+      "required": false,
+      "type": "integer",
+      "description": "Returned search results are paginated. Use this parameter to select the page number.",
+      "default": 1
+    },
+    "per_page": {
+      "required": false,
+      "type": "integer",
+      "description": "Determine the number of results per page.",
+      "accepted_values": [3, 200],
+      "default": 20
+    },
+    "callback": {
+      "required": false,
+      "type": "string",
+      "description": "JSONP callback function name."
+    },
+    "pretty": {
+      "required": false,
+      "type": "boolean",
+      "description": "Indent JSON output. This option should not be used in production.",
+      "accepted_values": ["true", "false"],
+      "default": "false"
+    }
+  }
+}
