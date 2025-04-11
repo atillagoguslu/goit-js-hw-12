@@ -28,7 +28,7 @@ JavaScript Homework 12.
 4. Click on any image to view it in full size
 
 ## 🛠️ Setup and Installation
-
+ 
 1. Clone this repository
 
 ```
@@ -68,4 +68,3 @@ This project is available for personal and educational use.
 ---
 
 Created by [Atilla Göğüslü] | [GitHub Profile](https://github.com/atillagoguslu)
- 
